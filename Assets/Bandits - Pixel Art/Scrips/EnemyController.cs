@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public Animator animator;
+
     public int maxHealth = 100;
     int currentHealth;
 
@@ -17,6 +19,8 @@ public class EnemyController : MonoBehaviour
     {
         currentHealth -= damage;
 
+        animator.SetTrigger("Hurt");
+
         if(currentHealth <= 0)
         {
             Die();
@@ -26,6 +30,11 @@ public class EnemyController : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died!");
+
+        animator.SetBool("isDead", true);
+
+        GetComponent<BoxCollider2D>().enabled = false;
+        this.enabled = false;
     }
 
     // Update is called once per frame
