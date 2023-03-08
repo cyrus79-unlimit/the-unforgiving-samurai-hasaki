@@ -44,38 +44,39 @@ public class Bandit_Bot : MonoBehaviour
         {
             // Bandit play animation run
             m_animator.SetInteger("AnimState", 2);
-        }
 
-        // Change direction as appropriate
-        if (directionTimer.Finished)
-        {
-            // move the opposite when finish time
-            directionMultiplier *= -1;
-            directionTimer.Run();
-        }
+            // Change direction as appropriate
+            if (directionTimer.Finished)
+            {
+                // move the opposite when finish time
+                directionMultiplier *= -1;
+                directionTimer.Run();
+            }
 
-        // Move the bot
-        // m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
-        transform.Translate(Vector2.right * m_speed * directionMultiplier * Time.deltaTime);
+            // Move the bot
+            // m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+            transform.Translate(Vector2.right * m_speed * directionMultiplier * Time.deltaTime);
 
-        // Check Bandit move left or right to flip
-        if (directionMultiplier < 0)
-        {
-            // Bandit is facing left
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        }
-        else if (directionMultiplier > 0)
-        {
-            // Bandit is facing right
-            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+            // Check Bandit move left or right to flip
+            if (directionMultiplier < 0)
+            {
+                // Bandit is facing left
+                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            }
+            else if (directionMultiplier > 0)
+            {
+                // Bandit is facing right
+                transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+            }
         }
 
         // Bandit is attacked by Player
         AnimatorStateInfo animstate = m_animator.GetCurrentAnimatorStateInfo(0);
-        if (this.gameObject.tag == "Bandit" && m_life == 0)
+        if (this.gameObject.tag == "Bandit")
         {
             m_animator.SetTrigger("Hurt");
-            if(animstate.normalizedTime >= 1)
+            m_life--;
+            if(animstate.normalizedTime >= 1 && m_life == 0)
             {
                 m_animator.SetTrigger("Death");
             }
