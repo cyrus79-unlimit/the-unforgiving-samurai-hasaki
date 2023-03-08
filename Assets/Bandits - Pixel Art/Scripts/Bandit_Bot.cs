@@ -40,9 +40,11 @@ public class Bandit_Bot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // Bandit play animation run
-        m_animator.SetInteger("AnimState", 2);
+        if(m_life > 0)
+        {
+            // Bandit play animation run
+            m_animator.SetInteger("AnimState", 2);
+        }
 
         // Change direction as appropriate
         if (directionTimer.Finished)
@@ -53,7 +55,7 @@ public class Bandit_Bot : MonoBehaviour
         }
 
         // Move the bot
-        //m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+        // m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
         transform.Translate(Vector2.right * m_speed * directionMultiplier * Time.deltaTime);
 
         // Check Bandit move left or right to flip
