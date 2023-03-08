@@ -5,11 +5,16 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb;
-    // Start is called before the first frame update
-    void Start()
+	[SerializeField] float m_jumpForce = 7.5f;
+	private Samurai_Sensor m_groundSensor;
+	private bool m_grounded = false;
+
+	// Start is called before the first frame update
+	void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
+		m_groundSensor = transform.Find("GroundSensor").GetComponent<Samurai_Sensor>();
+	}
 
 	void FixedUpdate()
 	{
