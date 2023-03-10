@@ -28,54 +28,7 @@ public class CharacterController : MonoBehaviour
 	}
 
 	private void Update()
-	{
-		/*if (!m_grounded)
-		{
-			m_grounded = true;
-			
-		}
-
-		//Check if character just started falling
-		if (m_grounded)
-		{
-			m_grounded = false;
-		}
-		// Check for movement input
-		float moveHorizontal = Input.GetAxis("Horizontal");
-		if (moveHorizontal != 0)
-		{
-			// Move the character horizontally
-			rb.velocity = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y);
-			isRunning = true;
-
-			// Flip the character sprite if moving left
-			Vector3 characterScale = transform.localScale;
-			if (moveHorizontal < 0)
-			{
-				characterScale.x = -1;
-			}
-			else
-			{
-				characterScale.x = 1;
-			}
-			transform.localScale = characterScale;
-		}
-		else
-		{
-			isRunning = false;
-		}
-
-		// Check for jump input
-		if (Input.GetKeyDown("space") && m_grounded)
-		{
-			animator.SetTrigger("Jump");
-			m_grounded = false;
-			animator.SetBool("Grounded", m_grounded);
-			rb.velocity = new Vector2(rb.velocity.x, m_jumpForce);
-			// Jump the character
-			*//*rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);*//*
-		}*/
-
+	{	
 		float xMove = Input.GetAxis("Horizontal");
 		if (xMove < 0)
 		{
@@ -110,7 +63,7 @@ public class CharacterController : MonoBehaviour
 
 			foreach(Collider2D enemy in hitEnemies)
 			{
-				enemy.GetComponent<EnemyController>().TakeDamage(25);
+				enemy.GetComponent<Bandit_Bot>().TakeDamage(25);
 			}
 		}
 		if (Input.GetKeyDown(KeyCode.X))

@@ -6,7 +6,7 @@ public class Bandit_Bot : MonoBehaviour
 
     [SerializeField] float m_speed = 4.0f;
     [SerializeField] float m_jumpForce = 7.5f;
-    [SerializeField] int m_life = 1;
+    public int m_life = 25;
 
 
     private Animator m_animator;
@@ -72,7 +72,7 @@ public class Bandit_Bot : MonoBehaviour
 
         // Bandit is attacked by Player
         AnimatorStateInfo animstate = m_animator.GetCurrentAnimatorStateInfo(0);
-        if (this.gameObject.tag == "Bandit")
+        /*if (this.gameObject.tag == "Bandit")
         {
             m_animator.SetTrigger("Hurt");
             m_life--;
@@ -80,7 +80,26 @@ public class Bandit_Bot : MonoBehaviour
             {
                 m_animator.SetTrigger("Death");
             }
-        }
+        }*/
     }
+	public void TakeDamage(int damage)
+	{
+		m_life -= damage;
+
+		m_animator.SetTrigger("Hurt");
+
+		if (m_life <= 0)
+		{
+			Die();
+		}
+	}
+	void Die()
+	{
+		Debug.Log("Enemy died!");
+		m_animator.SetTrigger("Death");
+
+		GetComponent<BoxCollider2D>().enabled = false;
+		this.enabled = false;
+	}
 }
 
