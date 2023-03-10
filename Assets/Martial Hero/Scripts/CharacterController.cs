@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CharacterController : MonoBehaviour
 {
 	private Rigidbody2D rb;
@@ -140,7 +140,12 @@ public class CharacterController : MonoBehaviour
 		{
 			isGround = true;
 		}
-	}
+        if (collision.gameObject.name.Contains("wall"))
+        {
+			Destroy(this.gameObject);
+            SceneManager.LoadScene(3);
+        }
+    }
 
 	public void DamagedPlayer(int damage)
     {
