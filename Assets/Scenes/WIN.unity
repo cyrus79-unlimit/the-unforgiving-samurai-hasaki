@@ -1866,8 +1866,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.8395747}
-  m_AnchoredPosition: {x: -18, y: -59}
-  m_SizeDelta: {x: 674.57, y: -245.79}
+  m_AnchoredPosition: {x: -10, y: -67}
+  m_SizeDelta: {x: 816.19, y: -245.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014162541
 MonoBehaviour:
@@ -1889,7 +1889,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HASAGI
+  m_text: 'Win
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 301139bd156f6b24aa61cbfd1e7ba933, type: 2}
   m_sharedMaterial: {fileID: 8253855176201473976, guid: 301139bd156f6b24aa61cbfd1e7ba933, type: 2}
@@ -2659,7 +2661,7 @@ GameObject:
   - component: {fileID: 1932765889}
   - component: {fileID: 1932765888}
   m_Layer: 5
-  m_Name: StartGameButton
+  m_Name: btnReStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2838,7 +2840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 301139bd156f6b24aa61cbfd1e7ba933, type: 2}
   m_sharedMaterial: {fileID: 8253855176201473976, guid: 301139bd156f6b24aa61cbfd1e7ba933, type: 2}
