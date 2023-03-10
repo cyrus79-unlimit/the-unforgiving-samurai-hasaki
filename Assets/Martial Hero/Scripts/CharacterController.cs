@@ -18,6 +18,9 @@ public class CharacterController : MonoBehaviour
 	public float attackRange = 0.5f;
 	public LayerMask enemyLayers;
 
+	// Player life
+	public int healthPlayer;
+	public int maxHealthPlayer = 2;
 
 
 	private void Start()
@@ -25,6 +28,10 @@ public class CharacterController : MonoBehaviour
 		animator = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		rotation = transform.eulerAngles;
+
+		// Set health to player
+		healthPlayer = maxHealthPlayer;
+
 	}
 
 	private void Update()
@@ -110,7 +117,7 @@ public class CharacterController : MonoBehaviour
 
 			foreach(Collider2D enemy in hitEnemies)
 			{
-				enemy.GetComponent<EnemyController>().TakeDamage(25);
+				enemy.GetComponent<Bandit_Bot>().TakeDamage(25);
 			}
 		}
 		if (Input.GetKeyDown(KeyCode.X))
@@ -132,6 +139,20 @@ public class CharacterController : MonoBehaviour
 		if (collision.gameObject.name == "ground")
 		{
 			isGround = true;
+		}
+	}
+
+	public void DamagedPlayer(int damage)
+    {
+		healthPlayer -= damage;
+		// Add animation Hurt below
+
+		// ========================
+		if(healthPlayer <= 0)
+        {
+			// Add animation die below
+
+			// =======================
 		}
 	}
 
