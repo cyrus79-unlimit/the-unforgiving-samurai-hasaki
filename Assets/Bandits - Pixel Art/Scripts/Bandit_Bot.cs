@@ -79,14 +79,14 @@ public class Bandit_Bot : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        m_animator.SetTrigger("Hurt");
+        /*m_animator.SetTrigger("Hurt");*/
+        m_animator.SetTrigger("Hurt");     
         if (health <= 0)
         {
             m_animator.SetTrigger("Death");
-
             GetComponent<BoxCollider2D>().enabled = false;
             this.enabled = false;
-        }
+        }  
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -25,9 +25,10 @@ public class CharacterController : MonoBehaviour
 	public int maxHealthPlayer = 2;
 
 	public GameOverScreen GameOverScreen;
+	public float uiDeplay = 0.1f;
 
 	public void GameOver()
-	{
+	{		
 		GameOverScreen.SetUp();
 	}
 
@@ -68,6 +69,7 @@ public class CharacterController : MonoBehaviour
 		{
 			rb.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
 			animator.SetTrigger("Jump");
+			isRunning = false;
 			isGround = false;
 		}
 		
@@ -126,7 +128,7 @@ public class CharacterController : MonoBehaviour
             // Add animation die below
             animator.SetTrigger("isDead");
 			// =======================	
-			GameOver();	
+			Invoke("GameOver",uiDeplay);
         }
 	}
 
