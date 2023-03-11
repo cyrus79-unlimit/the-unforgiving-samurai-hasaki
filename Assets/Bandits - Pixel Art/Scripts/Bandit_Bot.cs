@@ -6,7 +6,10 @@ public class Bandit_Bot : MonoBehaviour
 
     [SerializeField] float m_speed = 4.0f;
     [SerializeField] float m_jumpForce = 7.5f;
-    [SerializeField] int m_life = 1;
+    public int health;
+    public int maxHealth = 25;
+    public CharacterController playerhealth;
+    public int damage = 1;
 
 
     private Animator m_animator;
@@ -31,6 +34,8 @@ public class Bandit_Bot : MonoBehaviour
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
 
+        health = maxHealth;
+
         // add and run the timer
         directionTimer = gameObject.AddComponent<Timer>();
         directionTimer.AddTime(TimerDuration);
@@ -40,7 +45,7 @@ public class Bandit_Bot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(m_life > 0)
+        if(health > 0)
         {
             // Bandit play animation run
             m_animator.SetInteger("AnimState", 2);
@@ -69,18 +74,28 @@ public class Bandit_Bot : MonoBehaviour
                 transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
             }
         }
+    }
 
-        // Bandit is attacked by Player
-        AnimatorStateInfo animstate = m_animator.GetCurrentAnimatorStateInfo(0);
-        if (this.gameObject.tag == "Bandit")
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        /*m_animator.SetTrigger("Hurt");*/
+        m_animator.SetTrigger("Hurt");     
+        if (health <= 0)
         {
-            m_animator.SetTrigger("Hurt");
-            m_life--;
-            if(animstate.normalizedTime >= 1 && m_life == 0)
-            {
-                m_animator.SetTrigger("Death");
-            }
+            m_animator.SetTrigger("Death");
+            GetComponent<BoxCollider2D>().enabled = false;
+            this.enabled = false;
+        }  
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            playerhealth.DamagedPlayer(damage);
         }
     }
+
 }
 

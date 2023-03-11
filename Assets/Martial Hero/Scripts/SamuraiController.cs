@@ -21,7 +21,5 @@ public class SamuraiController : MonoBehaviour
 		{
 			animator.SetTrigger("isAttacking2");
 		}
-
-
 	}
 }
