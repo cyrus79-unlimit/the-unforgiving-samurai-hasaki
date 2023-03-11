@@ -29,4 +29,19 @@ public class GameOverScreen : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void MenuButton()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("level1-1");
+    }
 }

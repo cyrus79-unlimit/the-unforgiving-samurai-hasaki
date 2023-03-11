@@ -27,6 +27,8 @@ public class CharacterController : MonoBehaviour
 	public GameOverScreen GameOverScreen;
 	public float uiDeplay = 0.1f;
 
+	public GameObject[] hearts;
+
 	public void GameOver()
 	{		
 		GameOverScreen.SetUp();
@@ -45,7 +47,15 @@ public class CharacterController : MonoBehaviour
 	}
 
 	private void Update()
-	{			
+	{	
+		if(healthPlayer < 1)
+		{
+			Destroy(hearts[1].gameObject);
+		} else if (healthPlayer < 2)
+		{
+			Destroy(hearts[0].gameObject);
+		}
+
 		float xMove = Input.GetAxis("Horizontal");
 		if (xMove < 0)
 		{
@@ -112,8 +122,7 @@ public class CharacterController : MonoBehaviour
 		}
         if (collision.gameObject.name.Contains("wall"))
         {
-			Destroy(this.gameObject);
-            SceneManager.LoadScene("GameOver");
+			GameOver();
         }
     }
 
