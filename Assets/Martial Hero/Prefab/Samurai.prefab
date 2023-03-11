@@ -153,13 +153,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17dbe02b7791964a80f4bd25e6b90c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpforce: 5
+  speed: 7
+  jumpforce: 7
   attackPoint: {fileID: 950339755820275874}
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
+  healthPlayer: 0
+  maxHealthPlayer: 2
 --- !u!50 &950339756514572466
 Rigidbody2D:
   serializedVersion: 4

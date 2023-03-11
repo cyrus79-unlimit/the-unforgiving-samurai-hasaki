@@ -5,18 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    public string sceneName;
     public void StartGame()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void QuitGame()
+    public void RestartButton()
     {
-        Application.Quit();
-    }
-
-    public void reStart()
-    {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneName);
     }
 }

@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class CharacterController : MonoBehaviour
 {
 	private Rigidbody2D rb;
 	private Animator animator;
 
-	public float speed = 5f;
-	public float jumpforce = 5f;
+	public float speed = 7f;
+	public float jumpforce = 7f;
 	private bool isGround = false;
 	private Vector3 rotation;
 
@@ -21,6 +23,13 @@ public class CharacterController : MonoBehaviour
 	// Player life
 	public int healthPlayer;
 	public int maxHealthPlayer = 2;
+
+	public GameOverScreen GameOverScreen;
+
+	public void GameOver()
+	{
+		GameOverScreen.SetUp();
+	}
 
 
 	private void Start()
@@ -35,54 +44,7 @@ public class CharacterController : MonoBehaviour
 	}
 
 	private void Update()
-	{
-		/*if (!m_grounded)
-		{
-			m_grounded = true;
-			
-		}
-
-		//Check if character just started falling
-		if (m_grounded)
-		{
-			m_grounded = false;
-		}
-		// Check for movement input
-		float moveHorizontal = Input.GetAxis("Horizontal");
-		if (moveHorizontal != 0)
-		{
-			// Move the character horizontally
-			rb.velocity = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y);
-			isRunning = true;
-
-			// Flip the character sprite if moving left
-			Vector3 characterScale = transform.localScale;
-			if (moveHorizontal < 0)
-			{
-				characterScale.x = -1;
-			}
-			else
-			{
-				characterScale.x = 1;
-			}
-			transform.localScale = characterScale;
-		}
-		else
-		{
-			isRunning = false;
-		}
-
-		// Check for jump input
-		if (Input.GetKeyDown("space") && m_grounded)
-		{
-			animator.SetTrigger("Jump");
-			m_grounded = false;
-			animator.SetBool("Grounded", m_grounded);
-			rb.velocity = new Vector2(rb.velocity.x, m_jumpForce);
-			// Jump the character
-			*//*rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);*//*
-		}*/
-
+	{			
 		float xMove = Input.GetAxis("Horizontal");
 		if (xMove < 0)
 		{
@@ -123,7 +85,13 @@ public class CharacterController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.X))
 		{
 			animator.SetTrigger("isAttacking2");
-		}
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                enemy.GetComponent<Bandit_Bot>().TakeDamage(25);
+            }
+        }		
 	}
 
 	private void OnDrawGizmosSelected()
@@ -143,7 +111,7 @@ public class CharacterController : MonoBehaviour
         if (collision.gameObject.name.Contains("wall"))
         {
 			Destroy(this.gameObject);
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -151,14 +119,15 @@ public class CharacterController : MonoBehaviour
     {
 		healthPlayer -= damage;
 		// Add animation Hurt below
-
+		animator.SetTrigger("isHurt");
 		// ========================
 		if(healthPlayer <= 0)
         {
-			// Add animation die below
-
-			// =======================
-		}
+            // Add animation die below
+            animator.SetTrigger("isDead");
+			// =======================	
+			GameOver();	
+        }
 	}
 
 	private void FixedUpdate()
