@@ -1045,13 +1045,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46935,7 +46939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46986,13 +46990,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (11)
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49512,6 +49520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (4)
@@ -49526,7 +49538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50165,6 +50177,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (3)
@@ -50179,7 +50195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50792,6 +50808,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (7)
@@ -50806,7 +50826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52845,13 +52865,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (10)
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53490,6 +53514,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (5)
@@ -53504,7 +53532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53733,7 +53761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 489636722747431880, guid: b6ffc9e8f9bb5f2458a71174145f8984, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 489636722747431880, guid: b6ffc9e8f9bb5f2458a71174145f8984, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53779,6 +53807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossBandit
       objectReference: {fileID: 0}
+    - target: {fileID: 8192098756394173374, guid: b6ffc9e8f9bb5f2458a71174145f8984, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ffc9e8f9bb5f2458a71174145f8984, type: 3}
 --- !u!1 &1468675019
@@ -54588,13 +54620,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (8)
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55181,6 +55217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (1)
@@ -55195,7 +55235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55756,7 +55796,7 @@ PrefabInstance:
       objectReference: {fileID: 999111396}
     - target: {fileID: 8997698693645940382, guid: 825f450a75d153f4fbeea31313269b0d, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8997698693645940382, guid: 825f450a75d153f4fbeea31313269b0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55895,6 +55935,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (2)
@@ -55909,7 +55953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56632,13 +56676,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1656289864696254263, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 430929174}
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (9)
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_LocalPosition.x
