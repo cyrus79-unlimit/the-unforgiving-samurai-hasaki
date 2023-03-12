@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5576879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 238.61868, y: -14.292376, z: -1.2240815}
+  m_LocalPosition: {x: 237.3, y: -11.7, z: -1.2240815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46937,6 +46937,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandit
       objectReference: {fileID: 0}
+    - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -165796727
+      objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -46997,6 +47005,14 @@ PrefabInstance:
     - target: {fileID: 2978362973056390915, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_Name
       value: Bandit (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -165796727
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
@@ -54628,6 +54644,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandit (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -165796727
+      objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -55203,7 +55227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696283610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.739296, y: -1.1278753, z: -1.2710173}
+  m_LocalPosition: {x: 60.6, y: -0.7, z: -1.2710173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55227,11 +55251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5546350548135121637, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_SortingLayerID
-      value: 659458147
+      value: -165796727
       objectReference: {fileID: 0}
     - target: {fileID: 6574181242051862664, guid: 6b7992baaa5e07144b45870a015ebc37, type: 3}
       propertyPath: m_RootOrder
@@ -55841,6 +55865,14 @@ PrefabInstance:
     - target: {fileID: 8997698693646586169, guid: 825f450a75d153f4fbeea31313269b0d, type: 3}
       propertyPath: m_Name
       value: Samurai
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997698693646586173, guid: 825f450a75d153f4fbeea31313269b0d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997698693646586173, guid: 825f450a75d153f4fbeea31313269b0d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -165796727
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 825f450a75d153f4fbeea31313269b0d, type: 3}

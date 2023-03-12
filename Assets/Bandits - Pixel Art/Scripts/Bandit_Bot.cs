@@ -4,8 +4,7 @@ using System.Collections;
 public class Bandit_Bot : MonoBehaviour
 {
 
-    [SerializeField] float m_speed = 4.0f;
-    [SerializeField] float m_jumpForce = 7.5f;
+    [SerializeField] float m_speed = 4.0f;   
     public int health;
     public int maxHealth = 25;
     public CharacterController playerhealth;
@@ -14,10 +13,7 @@ public class Bandit_Bot : MonoBehaviour
 
     private Animator m_animator;
     private Rigidbody2D m_body2d;
-    private Sensor_Bandit m_groundSensor;
-    private bool m_grounded = false;
-    private bool m_combatIdle = false;
-    private bool m_isDead = false;
+    private Sensor_Bandit m_groundSensor;   
 
     // Timer
     const float TimerDuration = 1;

@@ -48,12 +48,12 @@ public class CharacterController : MonoBehaviour
 
 	private void Update()
 	{	
-		if(healthPlayer < 1)
-		{
-			Destroy(hearts[1].gameObject);
-		} else if (healthPlayer < 2)
+		if(healthPlayer >= 1 && healthPlayer < 2)
 		{
 			Destroy(hearts[0].gameObject);
+		} else if (healthPlayer < 1)
+		{
+			Destroy(hearts[1].gameObject);
 		}
 
 		float xMove = Input.GetAxis("Horizontal");
@@ -122,7 +122,9 @@ public class CharacterController : MonoBehaviour
 		}
         if (collision.gameObject.name.Contains("wall"))
         {
-			GameOver();
+            Destroy(hearts[0].gameObject);
+            Destroy(hearts[1].gameObject);
+            GameOver();
         }
     }
 
